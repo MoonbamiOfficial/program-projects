@@ -8,6 +8,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #222;
 }
 body .root-container {
     margin-right: 0.5rem;
