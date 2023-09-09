@@ -14,3 +14,13 @@ body .root-container {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 }
+.weather-app-section {
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(45deg, #81ffb6, #2a6dff);
+    color: white;
+    margin: 100px auto 0;
+    border-radius: 30px;
+    padding: 40px 30px;
+    text-align: center;
+}
