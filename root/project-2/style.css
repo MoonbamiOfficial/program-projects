@@ -1,0 +1,13 @@
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+body .root-container {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
