@@ -64,6 +64,9 @@ body .root-container {
 .weather-app-section .search .search-btn .search-icon{
     width: 30px;
 }
+.weather {
+    display: none;
+}
 .weather .icon {
     user-select: none;
 }

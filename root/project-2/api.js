@@ -40,6 +40,8 @@ async function checkWeather(cityName) {
             weatherIcon.src = "assets/snow.png";
             break;
     }
+
+    document.querySelector('.weather').style.display = "block";
 }
 
 function handleUserInput(event) {
