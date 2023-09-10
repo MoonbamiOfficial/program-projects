@@ -74,6 +74,12 @@ body .root-container {
     font-size: 80px;
     font-weight: 600;
 }
+.weather .temperature::after {
+    content: "°C";
+    position: relative;
+    top: -25px;
+    font-size: 3rem;
+}
 .weather .city-name {
     font-size: 40px;
     font-weight: 400;
