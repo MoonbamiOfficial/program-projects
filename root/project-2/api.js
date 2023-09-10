@@ -48,4 +48,4 @@ function handleUserInput(event) {
     if(event.key === 'Enter') checkWeather(searchInput.value);
 }
 
-checkWeather("tokyo");
+checkWeather();
