@@ -23,4 +23,4 @@ async function checkWeather(cityName) {
     document.querySelector('.wind-speed').textContent = data.wind.speed + ` km/h`;
 }
 
-checkWeather();
+checkWeather("tokyo");
