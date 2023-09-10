@@ -95,8 +95,8 @@ body .root-container {
     margin-right: 10px;
 }
 .weather .details .box 
-.humidity-title,
-.wind-speed-title {
+.humidity,
+.wind-speed {
     font-size: 30px;
     margin-top: -8px;
 }
