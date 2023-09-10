@@ -64,3 +64,39 @@ body .root-container {
 .weather-app-section .search .search-btn .search-icon{
     width: 30px;
 }
+.weather .icon {
+    user-select: none;
+}
+.weather .weather-icon {
+    margin-top: 30px;
+}
+.weather .temperature {
+    font-size: 80px;
+    font-weight: 600;
+}
+.weather .city-name {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.weather .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.weather .details .box {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.weather .details .box .icon {
+    margin-right: 10px;
+}
+.weather .details .box 
+.humidity-title,
+.wind-speed-title {
+    font-size: 30px;
+    margin-top: -8px;
+}
