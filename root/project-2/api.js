@@ -8,9 +8,7 @@ const searchInput = document.querySelector('.js-input')
 const searchBtn = document.querySelector('.js-search-btn')
     .addEventListener('click', () => checkWeather(searchInput.value));
 
-function handleUserInput(event) {
-    if(event.key === 'Enter') checkWeather(searchInput.value);
-}
+const weatherIcon = document.querySelector('.js-weather-icon');
 
 async function checkWeather(cityName) {
     const response = await fetch(weatherApiUrl + cityName + `&appid=${apiKey}`);
@@ -21,6 +19,31 @@ async function checkWeather(cityName) {
     document.querySelector('.js-temperature').textContent = Math.round(data.main.temp);
     document.querySelector('.humidity').textContent = data.main.humidity + `%`;
     document.querySelector('.wind-speed').textContent = data.wind.speed + ` km/h`;
+
+    switch(data.weather[0].main) {
+        case "Clear"  : 
+            weatherIcon.src = "assets/clear.png";
+            break;
+        case "Clouds" : 
+            weatherIcon.src = "assets/cloudy.png";
+            break;
+        case "Rain"   : 
+            weatherIcon.src = "assets/rain.png";
+            break;
+        case "Drizzle": 
+            weatherIcon.src = "assets/drizzle.png";
+            break;
+        case "Mist"   : 
+            weatherIcon.src = "assets/mist.png";
+            break;
+        case "Snow"   : 
+            weatherIcon.src = "assets/snow.png";
+            break;
+    }
+}
+
+function handleUserInput(event) {
+    if(event.key === 'Enter') checkWeather(searchInput.value);
 }
 
 checkWeather("tokyo");
