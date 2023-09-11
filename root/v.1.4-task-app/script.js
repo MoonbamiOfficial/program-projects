@@ -41,3 +41,7 @@ function addTask() {
 function saveData() {
     localStorage.setItem("tasks", taskList.textContent);
 }
+function getData() {
+    taskList.textContent = localStorage.getItem("tasks");
+}
+getData();
