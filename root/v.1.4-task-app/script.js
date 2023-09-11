@@ -1,6 +1,14 @@
 
 const taskInput = document.querySelector('#task-input');
-const taskList = document.querySelector('#list-container');
+const taskList = document.querySelector('#list-container')
+taskList.addEventListener('click', (element) => {
+    if(element.target.tagName === "LI") {
+        element.target.classList.toggle("checked");
+    }
+    else if(element.target.tagName === "IMG") {
+        element.target.parentElement.remove();
+    }
+}, false);
 const addBtn = document.querySelector('.js-add-btn')
     .addEventListener('click', () => addTask());
 
