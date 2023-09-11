@@ -6,9 +6,11 @@ const taskList = document.querySelector('#list-container');
 taskList.addEventListener('click', (element) => {
     if(element.target.tagName === "LI") {
         element.target.classList.toggle("checked");
+        saveData();
     }
     else if(element.target.tagName === "IMG") {
         element.target.parentElement.remove();
+        saveData();
     }
 }, false);
 
@@ -33,5 +35,9 @@ function addTask() {
         list.appendChild(deleteTask);
     }
     taskInput.value = '';
+    saveData();
 }
 
+function saveData() {
+    localStorage.setItem("tasks", taskList.textContent);
+}
