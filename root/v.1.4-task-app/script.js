@@ -1,7 +1,8 @@
 
-const taskInput = document.querySelector('#task-input')
+const taskInput = document.querySelector('#task-input');
 taskInput.addEventListener('keydown', (event) => handleUserInput(event));
-const taskList = document.querySelector('#list-container')
+
+const taskList = document.querySelector('#list-container');
 taskList.addEventListener('click', (element) => {
     if(element.target.tagName === "LI") {
         element.target.classList.toggle("checked");
@@ -10,9 +11,13 @@ taskList.addEventListener('click', (element) => {
         element.target.parentElement.remove();
     }
 }, false);
+
 const addBtn = document.querySelector('.js-add-btn')
     .addEventListener('click', () => addTask());
 
+
+
+    // functions
 function handleUserInput(event) {
     if(event.key === 'Enter') addTask();
 }
@@ -29,8 +34,4 @@ function addTask() {
     }
     taskInput.value = '';
 }
-
-
-
-
 
