@@ -64,3 +64,31 @@ body {
     background-color:rgba(255, 89, 69, 1);
     color:rgba(255, 255, 255, 1);
 }
+.task-app #list-container li {
+    position: relative;
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    color: #FFF;
+}
+.task-app #list-container li::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-image: url("assets/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+.task-app #list-container li.checked {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: line-through;
+}
+.task-app #list-container li.checked::before {
+    background-image: url("assets/checked.png");
+}
