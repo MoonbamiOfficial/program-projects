@@ -32,3 +32,31 @@ body {
 .task-app img {
     width: 50px;
 }
+.task-app .input-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E4E4E4;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+.task-app .input-section input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 16px;
+    font-size: 16px;
+}
+.task-app .input-section button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #FF5945;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    
+}
