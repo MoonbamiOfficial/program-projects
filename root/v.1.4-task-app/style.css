@@ -92,3 +92,14 @@ body {
 .task-app #list-container li.checked::before {
     background-image: url("assets/checked.png");
 }
+.task-app #list-container li img {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    opacity: 0.7;
+    transition: opacity ease-in-out 150ms;
+}
+.task-app #list-container li img:hover {
+    opacity: 1;
+}
