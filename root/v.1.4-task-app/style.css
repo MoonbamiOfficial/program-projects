@@ -53,7 +53,7 @@ body {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background-color: rgba(255, 89, 69, 0.8);
+    background-color: rgba(63, 207, 135, 0.8);
     color: rgba(255, 255, 255, 0.8);
     font-size: 16px;
     cursor: pointer;
@@ -61,7 +61,7 @@ body {
     transition: background-color, color, ease-in-out 150ms;
 }
 .task-app .input-section button:hover {
-    background-color:rgba(255, 89, 69, 1);
+    background-color: rgba(63, 207, 135, 1);
     color:rgba(255, 255, 255, 1);
 }
 .task-app #list-container li {
