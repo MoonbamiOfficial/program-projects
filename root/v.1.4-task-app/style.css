@@ -53,10 +53,14 @@ body {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background-color: #FF5945;
-    color: white;
+    background-color: rgba(255, 89, 69, 0.8);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
-
+    transition: background-color, color, ease-in-out 150ms;
+}
+.task-app .input-section button:hover {
+    background-color:rgba(255, 89, 69, 1);
+    color:rgba(255, 255, 255, 1);
 }
