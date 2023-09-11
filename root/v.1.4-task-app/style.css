@@ -17,13 +17,13 @@ body {
 .task-app {
     width: 100%;
     max-width: 550px;
-    background-color: white;
+    background-color: #071D3F;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 8px;
 }
 .task-app h1 {
-    color: #1e4e8d;
+    color: #FFF;
     display: flex;
     align-items: center;
     column-gap: 8px;
@@ -58,5 +58,5 @@ body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
-    
+
 }
