@@ -14,10 +14,21 @@ body {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 }
-
-
-
-
-
-
-
+.task-app {
+    width: 100%;
+    max-width: 550px;
+    background-color: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 8px;
+}
+.task-app h1 {
+    color: #1e4e8d;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-bottom: 30px;
+}
+.task-app img {
+    width: 50px;
+}
