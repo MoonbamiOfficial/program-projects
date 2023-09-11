@@ -103,3 +103,19 @@ body {
 .task-app #list-container li img:hover {
     opacity: 1;
 }
+.task-app .remove-all-btn {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    margin-top: 50px;
+    background-color: rgba(207, 63, 106, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    display: none;
+    transition: background-color, color, ease-in-out 150ms;
+}
+.task-app .remove-all-btn:hover {
+    background-color: rgba(207, 63, 106, 1);
+}

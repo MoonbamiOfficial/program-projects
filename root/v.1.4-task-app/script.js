@@ -17,7 +17,13 @@ taskList.addEventListener('click', (element) => {
 const addBtn = document.querySelector('.js-add-btn')
     .addEventListener('click', () => addTask());
 
-
+const removeTask = document.querySelector('.js-remove-all-btn')
+    .addEventListener('click', () => {
+        clearData();
+        while(taskList.hasChildNodes()) {
+            taskList.removeChild(taskList.firstChild);
+        }
+    });
 
     // functions
 function handleUserInput(event) {
@@ -45,3 +51,7 @@ function getData() {
     taskList.innerHTML = localStorage.getItem("tasks");
 }
 getData();
+function clearData() {
+    taskInput.innerHTML = localStorage.removeItem("tasks");
+
+}
