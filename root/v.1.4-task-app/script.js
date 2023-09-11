@@ -1,5 +1,6 @@
 
-const taskInput = document.querySelector('#task-input');
+const taskInput = document.querySelector('#task-input')
+taskInput.addEventListener('keydown', (event) => handleUserInput(event));
 const taskList = document.querySelector('#list-container')
 taskList.addEventListener('click', (element) => {
     if(element.target.tagName === "LI") {
@@ -12,6 +13,9 @@ taskList.addEventListener('click', (element) => {
 const addBtn = document.querySelector('.js-add-btn')
     .addEventListener('click', () => addTask());
 
+function handleUserInput(event) {
+    if(event.key === 'Enter') addTask();
+}
 
 function addTask() {
     if(taskInput.value === '') alert("Write something first!");
