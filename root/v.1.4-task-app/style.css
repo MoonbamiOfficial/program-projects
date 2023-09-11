@@ -1,0 +1,23 @@
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #222;
+}
+.root-container {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+
+
+
+
+
+
