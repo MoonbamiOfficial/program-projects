@@ -113,7 +113,6 @@ body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
-    display: none;
     transition: background-color, color, ease-in-out 150ms;
 }
 .task-app .remove-all-btn:hover {
