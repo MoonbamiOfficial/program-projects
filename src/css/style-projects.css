@@ -27,7 +27,7 @@ header nav a {
 .projects-section {
     display: flex;
     flex-direction: column;
-    padding: 30px 15px;
+    padding: 100px 15px 50px 15px;
 }
 .projects-section a {
     text-decoration: none;
