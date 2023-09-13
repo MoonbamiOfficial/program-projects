@@ -1,0 +1,126 @@
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+}
+body .root-container {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.weather-app-section {
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(45deg, #4e074b, #092a57);
+    color: white;
+    margin: 100px auto 0;
+    border-radius: 30px;
+    padding: 40px 30px;
+    text-align: center;
+}
+.weather-app-section .search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weather-app-section .search .city-input {
+    border: 0;
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #777;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 1.1rem;
+    transition: box-shadow, background-color, ease-in-out 150ms;
+}
+.weather-app-section .search .city-input:hover {
+    background-color: white;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+.weather-app-section .search .search-btn {
+    border: 0;
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    transition: box-shadow, background-color, ease-in-out 150ms;
+    cursor: pointer;
+}
+.weather-app-section .search .search-btn:hover{
+    background-color: white;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+.weather-app-section .search .search-btn .search-icon{
+    width: 30px;
+}
+.weather-app-section .error-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 30px;
+    display: none;
+}
+.weather-app-section .error-message img {
+    user-select: none;
+    width: 80px;
+    padding-bottom: 4px;
+}
+.weather {
+    display: none;
+}
+.weather .icon {
+    user-select: none;
+}
+.weather .weather-icon {
+    margin-top: 30px;
+}
+.weather .temperature {
+    font-size: 80px;
+    font-weight: 600;
+}
+.weather .temperature::after {
+    content: "°C";
+    position: relative;
+    top: -25px;
+    font-size: 3rem;
+}
+.weather .city-name {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.weather .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.weather .details .box {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.weather .details .box .icon {
+    margin-right: 10px;
+}
+.weather .details .box 
+.humidity,
+.wind-speed {
+    font-size: 24px;
+    margin-top: -8px;
+}
