@@ -21,12 +21,12 @@ header nav a {
     color: var(--white);
     width: 110px;
 }
-.project-section {
+.projects-section {
     display: flex;
     flex-direction: column;
     padding: 30px 15px;
 }
-.project-section a {
+.projects-section a {
     text-decoration: none;
     font-size: 2rem;
     color: var(--black);
@@ -35,7 +35,7 @@ header nav a {
     width: 50vw;
     transition: background-color, color, border-radius, ease-in-out 150ms;
 }
-.project-section a:hover {
+.projects-section a:hover {
     border-radius: 30px;
     color: var(--white);
     background-color: var(--steel-blue);
