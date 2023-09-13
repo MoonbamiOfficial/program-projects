@@ -1,4 +1,15 @@
 
+:root {
+    /* main colors */
+    --cultured: #F9F7F7;
+    --azureish-white: #DBE2EF;
+    --steel-blue: #3F72AF;
+    --space-cadet: #112D4E;
+
+    /* neutral colors */
+    --white: #fff;
+    --black: #000;
+}
 *,
 ::before,
 ::after {
