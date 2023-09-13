@@ -6,8 +6,9 @@ header {
     padding: 0 100px;
     background-color: var(--space-cadet)
 }
-header h1 {
+header a{
     color: var(--white);
+    text-decoration: none;
 }
 header nav {
     display: flex;
