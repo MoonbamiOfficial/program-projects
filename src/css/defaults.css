@@ -1,0 +1,27 @@
+
+:root {
+    /* main colors */
+    --cultured: #F9F7F7;
+    --azureish-white: #DBE2EF;
+    --steel-blue: #3F72AF;
+    --space-cadet: #112D4E;
+
+    /* neutral colors */
+    --white: #fff;
+    --black: #000;
+}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cultured)
+}
+.root-container {
+    margin-right: 0.5;
+    margin-left: 0.5;
+}
