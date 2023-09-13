@@ -1,0 +1,45 @@
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    width: 100vw;
+    background-color: var(--space-cadet);
+    z-index: 1000;
+}
+header a{
+    color: var(--white);
+    text-decoration: none;
+}
+header nav {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+}
+header nav a {
+    padding: 30px 20px;
+    text-decoration: none;
+    color: var(--white);
+    width: 110px;
+}
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 15px 50px 15px;
+}
+.projects-section a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--black);
+    border-radius: 30px;
+    padding: 0 0 8px 16px;
+    width: 50vw;
+    transition: background-color, color, border-radius, ease-in-out 150ms;
+}
+.projects-section a:hover {
+    border-radius: 30px;
+    color: var(--white);
+    background-color: var(--steel-blue);
+}
