@@ -32,7 +32,7 @@ const question = document.querySelector('#question');
 const answersBtn = document.querySelector('#answers-btn');
 const nextBtn = document.querySelector('#next-btn');
 nextBtn.addEventListener('click', () => {
-    if(currentQuestionIndex < question.length) handleNextButton();
+    if(currentQuestionIndex < questions.length) handleNextButton();
     else startAnimeQuiz();
 });
 
@@ -76,12 +76,12 @@ function selectedAnswer(btn) {
 }
 function handleNextButton() {
     currentQuestionIndex++;
-    if(currentQuestionIndex < question.length) showQuestion();
+    if(currentQuestionIndex < questions.length) showQuestion();
     else showScore();
 }
 function showScore() {
     resetState();
-    question.textContent = `You got ${score} points out of ${question.length}!`;
+    question.textContent = `You got ${score} points out of ${questions.length}!`;
     nextBtn.textContent = "Play Again?";
     nextBtn.style.display = "block";
 }
