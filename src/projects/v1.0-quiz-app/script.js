@@ -60,5 +60,12 @@ function selectedAnswer(btn) {
     const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect)selectedBtn.classList.add("correct");
     else selectedBtn.classList.add("incorrect");
+    Array.from(answersBtn.children).forEach(button => {
+        if(button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
+        button.disabled = true;
+    })
+    nextBtn.style.display = "block";
 }
 startAnimeQuiz();
