@@ -34,3 +34,7 @@ const nextBtn = document.querySelector('#next-btn');
 
 let currentQuestionIndex = 0;
 let score = 0;
+
+function startAnimeQuiz() {
+    nextBtn.textContent = "Next";
+}
