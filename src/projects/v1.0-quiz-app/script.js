@@ -76,6 +76,11 @@ function selectedAnswer(btn) {
 function handleNextButton() {
     currentQuestionIndex++;
     if(currentQuestionIndex < question.length) showQuestion();
-    
+    else showScore();
+}
+function showScore() {
+    question.textContent = `You got ${score} points out of ${question.length}!`;
+    nextBtn.textContent = "Play Again?";
+    nextBtn.style.display = "block";
 }
 startAnimeQuiz();
