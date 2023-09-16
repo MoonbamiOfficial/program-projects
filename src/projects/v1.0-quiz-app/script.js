@@ -37,4 +37,17 @@ let score = 0;
 
 function startAnimeQuiz() {
     nextBtn.textContent = "Next";
+    showQuestion();
+}
+function showQuestion() {
+    let currentQuestion = question[currentQuestionIndex];
+    let questionNum = currentQuestion++;
+    questionElement.textContent = questionNum + ". " + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.textContent = answer.text;
+        button.classList.add("btn");
+        answersBtn.appendChild(button);
+    })
 }
