@@ -49,10 +49,12 @@ body {
     cursor: pointer;
     transition: all ease-in-out 150ms;
 }
-.quiz-app .quiz-section #answers-btn .btn:hover {
+.quiz-app .quiz-section #answers-btn .btn:hover:not([disabled]) {
     background-color: #222;
     color: white;
-
+}
+.quiz-app .quiz-section #answers-btn .btn:disabled {
+    cursor: default;
 }
 .quiz-app .quiz-section #next-btn {
     background-color: #222;
