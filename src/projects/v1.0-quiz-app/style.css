@@ -38,7 +38,6 @@ body {
     font-weight: 600;
 }
 .quiz-app .quiz-section #answers-btn .btn {
-    background-color: white;
     color: #222;
     font-weight: 600;
     width: 100%;
@@ -66,4 +65,11 @@ body {
     border-radius: 4px;
     cursor: pointer;
     display: none;
+}
+/* js styling */
+.correct {
+    background-color: #9AEABC;
+}
+.incorrect {
+    background-color: #FF9393;
 }

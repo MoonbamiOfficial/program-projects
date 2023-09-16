@@ -51,7 +51,14 @@ function showQuestion() {
         button.textContent = answer.text;
         button.classList.add("btn");
         answersBtn.appendChild(button);
+        if(answer.correct) button.dataset.correct = answer.correct;
+        button.addEventListener('click', selectedAnswer);
     })
 }
-
+function selectedAnswer(btn) {
+    const selectedBtn = btn.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if(isCorrect)selectedBtn.classList.add("correct");
+    else selectedBtn.classList.add("incorrect");
+}
 startAnimeQuiz();
