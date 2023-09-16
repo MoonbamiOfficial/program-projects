@@ -30,11 +30,11 @@ const questions = [
 ];
 const question = document.querySelector('#question');
 const answersBtn = document.querySelector('#answers-btn');
-const nextBtn = document.querySelector('#next-btn')
-    .addEventListener('click', () => {
-        if(currentQuestionIndex < question.length) handleNextButton();
-        else startAnimeQuiz();
-    });
+const nextBtn = document.querySelector('#next-btn');
+nextBtn.addEventListener('click', () => {
+    if(currentQuestionIndex < question.length) handleNextButton();
+    else startAnimeQuiz();
+});
 
 let currentQuestionIndex = 0;
 let score = 0;
