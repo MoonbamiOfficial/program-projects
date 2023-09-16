@@ -63,6 +63,7 @@ function selectedAnswer(btn) {
     Array.from(answersBtn.children).forEach(button => {
         if(button.dataset.correct === "true") {
             button.classList.add("correct");
+            score++;
         }
         button.disabled = true;
     })
