@@ -87,6 +87,8 @@ function showScore() {
 }
 function resetState() {
     nextBtn.style.display = "none";
-    while(answersBtn.firstChild) answersBtn.removeChild(answersBtn.firstChild);
+    while(answersBtn.firstChild) {
+        answersBtn.removeChild(answersBtn.firstChild);
+    }
 }
 startAnimeQuiz();
