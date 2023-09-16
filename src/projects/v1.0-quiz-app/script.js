@@ -36,13 +36,15 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function startAnimeQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
     nextBtn.textContent = "Next";
     showQuestion();
 }
 function showQuestion() {
-    let currentQuestion = question[currentQuestionIndex];
-    let questionNum = currentQuestion++;
-    questionElement.textContent = questionNum + ". " + currentQuestion.question;
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNum = currentQuestionIndex+1;
+    question.textContent = questionNum + ". " + currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
