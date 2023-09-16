@@ -28,3 +28,9 @@ const questions = [
         ]
     },
 ];
+const question = document.querySelector('#question');
+const answersBtn = document.querySelector('#answers-btn');
+const nextBtn = document.querySelector('#next-btn');
+
+let currentQuestionIndex = 0;
+let score = 0;
