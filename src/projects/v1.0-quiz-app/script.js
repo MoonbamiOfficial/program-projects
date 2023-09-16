@@ -51,3 +51,5 @@ function showQuestion() {
         answersBtn.appendChild(button);
     })
 }
+
+startAnimeQuiz();
