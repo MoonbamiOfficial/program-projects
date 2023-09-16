@@ -46,6 +46,7 @@ function startAnimeQuiz() {
     showQuestion();
 }
 function showQuestion() {
+    resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex+1;
     question.textContent = questionNum + ". " + currentQuestion.question;
@@ -79,8 +80,13 @@ function handleNextButton() {
     else showScore();
 }
 function showScore() {
+    resetState();
     question.textContent = `You got ${score} points out of ${question.length}!`;
     nextBtn.textContent = "Play Again?";
     nextBtn.style.display = "block";
+}
+function resetState() {
+    nextBtn.style.display = "none";
+    while(answersBtn.firstChild) answersBtn.removeChild(answersBtn.firstChild);
 }
 startAnimeQuiz();
