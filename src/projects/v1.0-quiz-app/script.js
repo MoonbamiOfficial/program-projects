@@ -63,12 +63,14 @@ function showQuestion() {
 function selectedAnswer(btn) {
     const selectedBtn = btn.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect)selectedBtn.classList.add("correct");
+    if(isCorrect) {
+        selectedBtn.classList.add("correct");
+        score++;
+    }
     else selectedBtn.classList.add("incorrect");
     Array.from(answersBtn.children).forEach(button => {
         if(button.dataset.correct === "true") {
             button.classList.add("correct");
-            score++;
         }
         button.disabled = true;
     })
