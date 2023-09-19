@@ -1,7 +1,7 @@
 
 const passwordInput = document.querySelector('.js-input-pass')
 const generatePassBtn = document.querySelector('.js-generate-pass-btn')
-generatePassBtn.addEventListener('click', generatePassword);
+    .addEventListener('click', generatePassword);
 
 const maxPasswordLength = 15;
 
