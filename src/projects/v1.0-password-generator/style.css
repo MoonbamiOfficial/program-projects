@@ -46,3 +46,29 @@ main .display .input-pass {
     font-size: 24px;
     width: 100%;
 }
+main .generate-pass-btn {
+    border: 0;
+    outline: 0;
+    background-color: #00B359;
+    border-radius: 8px;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+    display: flex;
+    column-gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    opacity: 0.9;
+    transition: all ease-in-out 150ms;
+    cursor: pointer;
+}
+main .generate-pass-btn:hover {
+    opacity: 1;
+}
+main .fa-bolt {
+    width: 2rem;
+    height: 2rem;
+    color: #FFF;
+    cursor: pointer;
+}
