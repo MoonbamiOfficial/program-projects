@@ -34,9 +34,14 @@ main h1 {
 main h1 span {
     color: #00b359;
 }
+main .display .js-copy-icon {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+}
 main .display .fa-clipboard {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     color: #00b359;
     cursor: pointer;
 }

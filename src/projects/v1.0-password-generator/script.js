@@ -2,6 +2,8 @@
 const passwordInput = document.querySelector('.js-input-pass')
 const generatePassBtn = document.querySelector('.js-generate-pass-btn')
     .addEventListener('click', generatePassword);
+const copy = document.querySelector('.js-copy-icon')
+    .addEventListener('click', toCopyPassword);
 
 const maxPasswordLength = 15;
 
@@ -23,4 +25,8 @@ function generatePassword() {
         password += allCharacters[Math.floor(Math.random() * allCharacters.length)];
     }
     passwordInput.value = password;
+}
+function toCopyPassword() {
+    passwordInput.select();
+    document.execCommand("copy");
 }
