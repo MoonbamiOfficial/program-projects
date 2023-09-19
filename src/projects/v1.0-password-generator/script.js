@@ -3,7 +3,6 @@ const passwordInput = document.querySelector('.js-input-pass')
 const generatePassBtn = document.querySelector('.js-generate-pass-btn')
 generatePassBtn.addEventListener('click', generatePassword);
 
-const minPasswordLength = 6;
 const maxPasswordLength = 15;
 
 const upperCaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
