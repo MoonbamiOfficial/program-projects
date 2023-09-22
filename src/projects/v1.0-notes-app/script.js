@@ -25,6 +25,12 @@ const createBtn = document.querySelector('.js-create-notes-btn')
         }
     });
 
+document.addEventListener('keydown', event => {
+    if(event.key === 'Enter') {
+        document.execCommand('insertLineBreak');
+        event.preventDefault();
+    }
+})
 function setStorage() {
     localStorage.setItem("notes", notesContainer.innerHTML);
 }
