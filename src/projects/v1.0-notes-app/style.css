@@ -53,7 +53,7 @@ main .input {
     margin: 20px 0;
     outline: none;
     border-radius: 8px;
-    display: none;
+    /* display: none; */
 }
 main .input img {
     position: absolute;
