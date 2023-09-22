@@ -11,5 +11,24 @@ const createBtn = document.querySelector('.js-create-notes-btn')
         notesContainer.appendChild(newNotesInput).appendChild(newDeleteImg);
     });
     notesContainer.addEventListener('click', function(key) {
-        if(key.target.tagName === "IMG") key.target.parentElement.remove();
+        if(key.target.tagName === "IMG") {
+            key.target.parentElement.remove();
+            setStorage();
+        }
+        else if(key.target.tagName === "P") {
+            notes = document.querySelectorAll('.input');
+            notes.forEach(note => {
+                note.onkeyup = function() {
+                    setStorage();
+                }
+            })
+        }
     });
+
+function setStorage() {
+    localStorage.setItem("notes", notesContainer.innerHTML);
+}
+function getStorage() {
+    notesContainer.innerHTML = localStorage.getItem("notes");
+}
+getStorage();
