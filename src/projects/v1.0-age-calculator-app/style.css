@@ -9,3 +9,19 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+main {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4203A9, #90BAFC);
+    color: #FFF;
+    padding: 10px;
+}
+main .calculator {
+    max-width: 600px;
+    margin: 10% 0 0 10%;
+}
+main .calculator h1 {
+    font-size: 60px;
+}
+main .calculator h1 span {
+    color: #FFFF76;
+}
