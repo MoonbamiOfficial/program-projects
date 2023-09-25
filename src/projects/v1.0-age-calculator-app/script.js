@@ -41,28 +41,28 @@ function calculateAge() {
 
     switch(true) {
         case getYear >= 2 && getMonth >= 2 && getDay >= 2: 
-            ageDisplay.textContent = `You are ${getYear} years, ${getMonth} months and ${getDay} days old.`;
+            ageDisplay.innerHTML = `You are <span>${getYear}</span> years, <span>${getMonth}</span> months and <span>${getDay}</span> days old.`;
             break;
         case getYear <= 1 && getMonth >= 2 && getDay >= 2: 
-            ageDisplay.textContent = `You are ${getYear} year, ${getMonth} months and ${getDay} days old.`;
+            ageDisplay.innerHTML = `You are <span>${getYear}</span> year, <span>${getMonth}</span> months and <span>${getDay}</span> days old.`;
             break;
         case getYear >= 2 && getMonth <= 1 && getDay >= 2: 
-            ageDisplay.textContent = `You are ${getYear} years, ${getMonth} month and ${getDay} days old.`;
+            ageDisplay.innerHTML = `You are <span>${getYear}</span> years, <span>${getMonth}</span> month and <span>${getDay}</span> days old.`;
             break;
         case getYear >= 2 && getMonth >= 2 && getDay <= 1: 
-            ageDisplay.textContent = `You are ${getYear} years, ${getMonth} months and ${getDay} day old.`;
+            ageDisplay.innerHTML = `You are <span>${getYear}</span> years, <span>${getMonth}</span> months and <span>${getDay}</span> day old.`;
             break;
         case getYear <= 1 && getMonth <= 1 && getDay >= 2: 
-            ageDisplay.textContent = `You are ${getYear} year, ${getMonth} month and ${getDay} days old.`;
+            ageDisplay.innerHTML = `You are <span>${getYear}</span> year, <span>${getMonth}</span> month and <span>${getDay}</span> days old.`;
             break;
         case getYear >= 2 && getMonth <= 1 && getDay <= 1: 
-            ageDisplay.textContent = `You are ${getYear} years, ${getMonth} month and ${getDay} day old.`;
+            ageDisplay.innerHTML = `You are <span>${getYear}</span> years, <span>${getMonth}</span> month and <span>${getDay}</span> day old.`;
             break;
         case getYear <= 1 && getMonth >= 2 && getDay <= 1: 
-            ageDisplay.textContent = `You are ${getYear} year, ${getMonth} months and ${getDay} days old.`;
+            ageDisplay.innerHTML = `You are <span>${getYear}</span> year, <span>${getMonth}</span> months and <span>${getDay}</span> days old.`;
             break;
         case getYear <= 1 && getMonth <= 1 && getDay <= 1: 
-            ageDisplay.textContent = `You are ${getYear} year, ${getMonth} month and ${getDay} day old.`;
+            ageDisplay.innerHTML = `You are <span>${getYear}</span> year, <span>${getMonth}</span> month and <span>${getDay}</span> day old.`;
             break;
     };
 }
