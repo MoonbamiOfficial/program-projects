@@ -55,7 +55,7 @@ main .calculator .input-container #date::-webkit-calendar-picker-indicator {
     background-size: 30px;
     cursor: pointer;
 }
-main .calculator .input-container .calculate-btn {
+main .calculator .input-container .calculate-age-btn {
     background-color: #FFFF76;
     border: 0;
     outline: 0;
@@ -67,7 +67,7 @@ main .calculator .input-container .calculate-btn {
     cursor: pointer;
     transition: all ease-in-out 150ms;
 }
-main .calculator .input-container .calculate-btn:hover {
+main .calculator .input-container .calculate-age-btn:hover {
     background-color: #FDFD40;
     color: #000;
 }
