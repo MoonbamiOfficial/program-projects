@@ -29,5 +29,15 @@ function calculateAge() {
     }
 
     if(presentDay >= birthDay) getDay = presentDay - birthDay;
-    
+    else {
+        getMonth--;
+        getDay = getDaysInMonth(birthYear, birthMonth) + presentDay - birthDay;
+    }
+    if(getMonth < 0) {
+        getMonth = 11;
+        getYear--;
+    }
+}
+function getDaysInMonth(year, month) {
+    return new Date(year, month, 0).getDate();
 }
