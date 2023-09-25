@@ -71,3 +71,9 @@ main .calculator .input-container .calculate-age-btn:hover {
     background-color: #FDFD40;
     color: #000;
 }
+main .calculator .age-display {
+    font-size: 30px;
+}
+main .calculator .age-display span {
+    color: #FFFF76;
+}
