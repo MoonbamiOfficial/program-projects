@@ -1,29 +1,4 @@
 
-header {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 100px;
-    width: 100vw;
-    background-color: var(--space-cadet);
-    z-index: 1000;
-}
-header a{
-    color: var(--white);
-    text-decoration: none;
-}
-header nav {
-    display: flex;
-    font-size: 20px;
-    text-align: center;
-}
-header nav a {
-    padding: 30px 20px;
-    text-decoration: none;
-    color: var(--white);
-    width: 110px;
-}
 .hero {
     position: relative;
     display: flex;
