@@ -1,15 +1,16 @@
 
+import { Link } from 'react-router-dom';
 import './css/header.css'
 
 const Header = () => {
   return (
     <header>
-      <h1><a href="../index.html">Programming Projects</a></h1>
+      <h1><Link to="/home">Programming Projects</Link></h1>
       <nav>
-        <a href="../index.html">Home</a>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
-        <a href="">About</a>
+        <Link to="/home">Home</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="">Contact</Link>
+        <Link to="">About</Link>
       </nav>
     </header>
   );

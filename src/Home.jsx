@@ -1,8 +1,8 @@
 
-import CodingImage from './assets/images/coding.jpg'
-import './css/style-index.css'
+import CodingImage from './assets/images/coding.jpg';
+import './css/style-index.css';
 
-const Hero = () => {
+const Home = () => {
   return (
     <section className="hero">
       <h2>JavaScript Projects of Moonbami</h2>
@@ -11,4 +11,4 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default Home;
