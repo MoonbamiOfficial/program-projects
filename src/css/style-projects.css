@@ -2,13 +2,19 @@
     position: relative;
     display: flex;
 }
-.projects {
+.projects-section img {
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+    filter: brightness(0.15);
+}
+.projects-section .projects {
     position: absolute;
     display: flex;
     flex-direction: column;
     padding: 150px 15px 50px 15px;
 }
-.projects a {
+.projects-section .projects a {
     text-decoration: none;
     font-size: 2rem;
     color: var(--azureish-white);
@@ -17,14 +23,8 @@
     width: 50vw;
     transition: background-color, color, border-radius, ease-in-out 150ms;
 }
-.projects a:hover {
+.projects-section .projects a:hover {
     border-radius: 30px;
     color: var(--white);
     background-color: var(--steel-blue);
-}
-.projects-section img {
-    width: 100%;
-    height: 720px;
-    object-fit: cover;
-    filter: brightness(0.15);
 }
