@@ -9,7 +9,6 @@ header {
     padding: 0 100px;
     margin: 0 auto 0 auto;
     width: 100vw;
-    background-color: var(--space-cadet);
     z-index: 1000;
 }
 header a, h1{
@@ -34,7 +33,7 @@ header nav a::before {
     top: 60px;
     width: 0;
     height: 3px;
-    background-color: white;
+    background-color: var(--steel-blue);
     border-radius: 4px;
     transition: all ease-in-out 250ms;
 }
