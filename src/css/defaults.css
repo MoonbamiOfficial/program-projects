@@ -16,12 +16,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--cultured)
-}
-.root-container {
-    margin-right: 0.5;
-    margin-left: 0.5;
 }

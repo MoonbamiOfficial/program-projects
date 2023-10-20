@@ -1,45 +1,31 @@
-
-header {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 100px;
-    width: 100vw;
-    background-color: var(--space-cadet);
-    z-index: 1000;
-}
-header a{
-    color: var(--white);
-    text-decoration: none;
-}
-header nav {
-    display: flex;
-    font-size: 20px;
-    text-align: center;
-}
-header nav a {
-    padding: 30px 20px;
-    text-decoration: none;
-    color: var(--white);
-    width: 110px;
-}
 .projects-section {
+    position: relative;
+    display: flex;
+}
+.projects-section img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.15);
+}
+.projects-section .projects {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    padding: 100px 15px 50px 15px;
+    padding: 150px 15px 50px 100px;
 }
-.projects-section a {
+.projects-section .projects a {
     text-decoration: none;
     font-size: 2rem;
-    color: var(--black);
+    color: var(--azureish-white);
     border-radius: 30px;
-    padding: 0 0 8px 16px;
+    padding: 0 0 0 16px;
+    margin-bottom: 8px;
     width: 50vw;
     transition: background-color, color, border-radius, ease-in-out 150ms;
 }
-.projects-section a:hover {
+.projects-section .projects a:hover {
     border-radius: 30px;
-    color: var(--white);
+    color: var(--azureish-white);
     background-color: var(--steel-blue);
 }
