@@ -4,7 +4,6 @@ import Header from './Header';
 import Home from './Home';
 import Projects from './Projects';
 import './css/defaults.css';
-import AgeCalculatorApp from './projects/v1.0-age-calculator-app/AgeCalculatorApp';
 
 function App() {
   return (
@@ -16,20 +15,17 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
-              <Route path="/home">
+              <Route exact path="/home">
                 <Home />
               </Route>  
-              <Route path="/projects">
+              <Route exact path="/projects">
                 <Projects />
-              </Route>
-              <Route exact path="/age-calculator-app">
-                <AgeCalculatorApp />
               </Route>
             </Switch>
           </main>
         </div>
       </Router>
   )
-}
+} 
 
 export default App;
