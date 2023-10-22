@@ -12,20 +12,20 @@
     display: flex;
     flex-direction: column;
     padding: 150px 15px 50px 100px;
-  }
-  .projects a {
-    text-decoration: none;
-    font-size: 2rem;
-    color: var(--azureish-white);
-    border-radius: 30px;
-    padding: 0 0 0 16px;
-    margin-bottom: 8px;
-    width: 50vw;
-    transition: background-color, color, border-radius, ease-in-out 150ms;
-  }
-  .projects a:hover {
-    border-radius: 30px;
-    color: var(--azureish-white);
-    background-color: var(--steel-blue);
+    a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: var(--azureish-white);
+      border-radius: 30px;
+      padding: 0 0 0 16px;
+      margin-bottom: 8px;
+      width: 50vw;
+      transition: background-color, color, border-radius, ease-in-out 150ms;
+    }
+    a:hover {
+      border-radius: 30px;
+      color: var(--azureish-white);
+      background-color: var(--steel-blue);
+    }
   }
 }
