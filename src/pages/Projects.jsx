@@ -1,8 +1,8 @@
 
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import CodingImage from './assets/images/coding.jpg';
-import './css/style-projects.css';
+import CodingImage from '../assets/images/coding.jpg';
+import '../styles/style-projects.css';
 
 const Projects = () => {
   useEffect(() => {

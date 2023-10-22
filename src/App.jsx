@@ -1,9 +1,9 @@
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './Header';
-import Home from './Home';
-import Projects from './Projects';
-import './css/defaults.css';
+import { BrowserRouter as Router, Route, Routes as Switch } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import './styles/defaults.css';
 
 function App() {
   return (
@@ -12,15 +12,9 @@ function App() {
           <Header />
           <main>
             <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route exact path="/home">
-                <Home />
-              </Route>  
-              <Route exact path="/projects">
-                <Projects />
-              </Route>
+              <Route exact path="/" element={<Home />}/>
+              <Route exact path="/home" element={<Home />}/> 
+              <Route exact path="/projects" element={<Projects />}/>
             </Switch>
           </main>
         </div>
