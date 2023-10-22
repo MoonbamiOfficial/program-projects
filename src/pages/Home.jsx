@@ -1,7 +1,7 @@
 
 import { useEffect } from 'react';
 import CodingImage from '../assets/images/coding.jpg';
-import '../styles/style-index.css';
+import '../styles/style-index.scss';
 
 const Home = () => {
   useEffect(() => {
