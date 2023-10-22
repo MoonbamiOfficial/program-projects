@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes as Switch } from 'react-router-d
 import Header from './components/Header';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import './styles/defaults.css';
+import WebsiteLaunchCountdown from './projects/website-launch-countdown/WebsiteLaunchCountdown';
+import './styles/defaults.scss';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
               <Route exact path="/" element={<Home />}/>
               <Route exact path="/home" element={<Home />}/> 
               <Route exact path="/projects" element={<Projects />}/>
+              <Route exact path="/projects/wlc" element={<WebsiteLaunchCountdown />}/>
             </Switch>
           </main>
         </div>

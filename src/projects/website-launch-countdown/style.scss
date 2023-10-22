@@ -1,0 +1,74 @@
+
+.website-launch-countdown-section {
+  position: relative;
+  background-image: url("../../assets/images/pexels-irina-iriser-1366957.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  color: var(--white);
+  width: 100vw;
+  height: 100vh;
+  padding: 0 8%;
+  .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    h1 {
+      font-size: 64px;
+      font-weight: 600;
+      span {
+        color: #FF375F;
+      }
+    }
+    .launch-timer {
+      display: flex;
+      user-select: none;
+      div {
+        flex-basis: 115px;
+        margin-right: auto;
+        p {
+          font-size: 60px;
+          margin-bottom: -15px;
+        }
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      border: 3px solid var(--white);
+      outline: none;
+      padding: 12px 25px;
+      margin-top: 15px;
+      color: var(--white);
+      font-size: 1rem;
+      cursor: pointer;
+      .fa-right-to-bracket {
+        width: 25px;
+        height: 25px;
+        padding-left: 16px;
+      }
+    }
+  }
+  .rocket {
+    position: absolute;
+    width: 350px;
+    right: 15%;
+    bottom: 0;
+    animation: rocket 5s linear infinite;
+  }
+}
+
+@keyframes rocket {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    opacity: 0;
+  }
+}
