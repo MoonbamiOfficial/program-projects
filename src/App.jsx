@@ -16,10 +16,10 @@ function App() {
           <main>
             <Switch>
               <Route exact path="/" element={<Home />}/>
-              <Route exact path="/home" element={<Home />}/> 
-              <Route exact path="/projects" element={<Projects />}/>
-              <Route exact path="/projects/wlc" element={<WebsiteLaunchCountdown />}/>
-              <Route exact path="/projects/tts" element={<TextToSpeech />}/>
+              <Route exact path="home" element={<Home />}/> 
+              <Route exact path="projects" element={<Projects />}/>
+              <Route exact path="projects/wlc" element={<WebsiteLaunchCountdown />}/>
+              <Route exact path="projects/tts" element={<TextToSpeech />}/>
             </Switch>
           </main>
         </div>
