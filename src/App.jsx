@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import WebsiteLaunchCountdown from './pages/projects/website-launch-countdown/WebsiteLaunchCountdown';
+import TextToSpeech from './pages/projects/text-to-speech/TextToSpeech';
 import './styles/defaults.scss';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
               <Route exact path="/home" element={<Home />}/> 
               <Route exact path="/projects" element={<Projects />}/>
               <Route exact path="/projects/wlc" element={<WebsiteLaunchCountdown />}/>
+              <Route exact path="/projects/tts" element={<TextToSpeech />}/>
             </Switch>
           </main>
         </div>

@@ -15,6 +15,7 @@ const Projects = () => {
         <img src={ Building } alt="High-rise Buildings During Nighttime" />
         <section className="projects">
           <Link to="/projects/wlc">Website Launch Countdown</Link>
+          <Link to="/projects/tts">Text to Speech</Link>
         </section>
       </section>
   );
