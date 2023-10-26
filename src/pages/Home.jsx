@@ -1,4 +1,5 @@
 
+import React from 'react';
 import { useEffect } from 'react';
 import CodingImage from '../assets/images/coding.jpg';
 import '../styles/style-index.scss';
