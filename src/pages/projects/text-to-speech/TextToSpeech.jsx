@@ -9,7 +9,15 @@ const TextToSpeech = () => {
   })
   return (
     <section className="text-to-speech-section">
-
+      <h1>Text to Speech</h1>
+      <textarea name="" id="input-area" className="js-input-area" placeholder="Aa"></textarea>
+      <div className="row">
+        <select name="" id="voices" className="js-voices"></select>
+        <button className="js-listen-btn listen-btn">
+          <i class="fa-solid fa-play"></i>
+          Listen
+        </button>
+      </div>
     </section>
   )
 }
