@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes as Switch } from 'react-router-d
 import Header from './components/Header';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import WebsiteLaunchCountdown from './projects/website-launch-countdown/WebsiteLaunchCountdown';
+import WebsiteLaunchCountdown from './pages/projects/website-launch-countdown/WebsiteLaunchCountdown';
 import './styles/defaults.scss';
 
 function App() {
