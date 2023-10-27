@@ -1,6 +1,7 @@
 
+import React from 'react';
 import { useEffect } from "react";
-import Rocket from '../../assets/images/png/rocket.png';
+import Rocket from '../../../assets/images/png/rocket.png';
 import './style.scss';
 
 const LaunchWebsite = () => {
