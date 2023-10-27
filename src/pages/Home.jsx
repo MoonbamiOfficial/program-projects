@@ -6,7 +6,7 @@ import '../styles/style-index.scss';
 
 const Home = () => {
   useEffect(() => {
-    document.title = "Programming Projects";
+    document.title = "Vite Projects";
   }, []);
   
   return (

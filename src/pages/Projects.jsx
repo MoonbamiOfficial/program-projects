@@ -7,7 +7,7 @@ import '../styles/style-projects.scss';
 
 const Projects = () => {
   useEffect(() => {
-    document.title = "Programming Projects";
+    document.title = "Vite Projects";
   }, []);
   
   return (
