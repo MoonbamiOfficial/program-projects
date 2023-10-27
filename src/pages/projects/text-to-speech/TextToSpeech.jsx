@@ -21,7 +21,7 @@ const TextToSpeech = () => {
     voiceSelect.addEventListener('change', () => {
       speech.voice = voices[voiceSelect.value];
     })
-  }, [])
+  }, [speech, voices])
 
   return (
     <section className="text-to-speech-section">
