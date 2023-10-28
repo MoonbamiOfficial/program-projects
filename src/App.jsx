@@ -7,6 +7,7 @@ import Projects from './pages/Projects';
 import WebsiteLaunchCountdown from './pages/projects/website-launch-countdown/WebsiteLaunchCountdown';
 import TextToSpeech from './pages/projects/text-to-speech/TextToSpeech';
 import './styles/defaults.scss';
+import DragAndDrop from './pages/projects/drag-and-drop/DragAndDrop';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route exact path="projects" element={<Projects />}/>
               <Route exact path="projects/wlc" element={<WebsiteLaunchCountdown />}/>
               <Route exact path="projects/tts" element={<TextToSpeech />}/>
+              <Route exact path="projects/dad" element={<DragAndDrop />}/>
             </Switch>
           </main>
         </div>

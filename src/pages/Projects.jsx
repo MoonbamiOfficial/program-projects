@@ -16,6 +16,7 @@ const Projects = () => {
         <section className="projects">
           <Link to="/projects/wlc">Website Launch Countdown</Link>
           <Link to="/projects/tts">Text to Speech</Link>
+          <Link to="/projects/dad">Drag & Drop</Link>
         </section>
       </section>
   );
