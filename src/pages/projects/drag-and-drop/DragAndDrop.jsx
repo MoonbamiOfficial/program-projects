@@ -1,5 +1,6 @@
 
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
+import './style.scss';
 
 const DragAndDrop = () => {
 
@@ -8,7 +9,10 @@ const DragAndDrop = () => {
   }, [])
   
   return (
-    <section className="drag-and-drop-section"></section>
+    <section className="drag-and-drop-section">
+      
+
+    </section>
   )
 }
 
