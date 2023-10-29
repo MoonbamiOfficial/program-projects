@@ -1,6 +1,5 @@
 
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Building from '../assets/images/pexels-irina-iriser-1366957.jpg';
 import '../styles/style-index.scss';
 
