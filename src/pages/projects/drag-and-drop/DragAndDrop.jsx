@@ -3,15 +3,40 @@ import React, { useEffect } from 'react';
 import './style.scss';
 
 const DragAndDrop = () => {
+  let lists = document.getElementsByClassName('item');
+  let rightBox = document.getElementById('right');
+  let leftBox = document.getElementById('#left');
+  
+  for(list of lists) {
+    list.addEventListener('dragstart', function(e) {
+      let selected = e.target;
+      
+      rightBox.addEventListener('dragover', function(e) {
+        e.preventDefault();
+      })
+      rightBox.addEventListener('drop', function(e) {
+        rightBox.appendChild(selected);
+        selected = null;
+      })
+
+      leftBox.addEventListener('dragover', function(e) {
+        e.preventDefault();
+      })
+      leftBox.addEventListener('drop', function(e) {
+        leftBox.appendChild(selected);
+        selected = null;
+      })
+    })
+  }
 
   useEffect(() => {
     document.title = "Drag & Drop";
+  
   }, [])
   
   return (
     <section className="drag-and-drop-section">
-      <div id="left-box" className="box"></div>
-      <div id="right-box" className="box">
+      <div id="left" className="box">
         <div className="item" draggable="true">
           <i className="fa-solid fa-grip-vertical"></i>
           Item One
@@ -29,8 +54,9 @@ const DragAndDrop = () => {
           Item Four
         </div>
       </div>
+      <div id="right" className="box"></div>
     </section>
   )
 }
 
-export default DragAndDrop
+export default DragAndDrop;
